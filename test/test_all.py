@@ -130,7 +130,7 @@ class Tests(TestCase):
 
         db.session.add(ObjectC(title=u'my title', content=u'hello world'))
         self.assertRaises(AttributeError, db.session.commit)
-        db.session.rollback()
+        #db.session.rollback()
 
 
         # make sure does not interfere with ObjectA's results
